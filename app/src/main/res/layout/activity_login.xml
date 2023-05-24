@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight=".3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/app_logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:layout_marginTop="30sp"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/LoginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/LoginSubtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please log in to continue."
+            android:textSize="16sp"
+            android:layout_marginBottom="30sp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email or username"
+            android:padding="12dp"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="25sp"
+            android:elevation="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:drawableStart="@drawable/baseline_mail_outline_24"
+            android:drawablePadding="8dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="25sp"
+            android:elevation="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Forgot password?"
+                android:textSize="14sp"
+                android:textColor="@color/link_color"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_button"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/extrasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/signupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/signupSubtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="16sp"
+            android:textColor="@color/link_color"
+            android:layout_marginLeft="5sp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
