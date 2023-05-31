@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566100626844",
+    "project_id": "fit-application-42315",
+    "storage_bucket": "fit-application-42315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566100626844:android:6c16090dfe8e82e1b38c59",
+        "android_client_info": {
+          "package_name": "com.dpaulos6.the2fitapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_GUo-OUTgkBYEm4q4eHUW-qaVGa6I1Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

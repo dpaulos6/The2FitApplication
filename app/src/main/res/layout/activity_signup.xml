@@ -126,10 +126,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.6"
                 android:background="@drawable/rounded_button"
-                android:text="Login"
+                android:text="Sign up"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                android:onClick="RegisterAccount"/>
 
         </LinearLayout>
 

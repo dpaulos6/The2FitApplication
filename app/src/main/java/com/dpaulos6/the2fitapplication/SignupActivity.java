@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class SignupActivity extends AppCompatActivity
@@ -25,5 +27,18 @@ public class SignupActivity extends AppCompatActivity
         startActivity(intent);
       }
     });
+  }
+
+  public void RegisterAccount(View view)
+  {
+    EditText username = findViewById(R.id.usernameInput);
+    EditText email = findViewById(R.id.emailInput);
+    EditText passwd = findViewById(R.id.passwordInput);
+    EditText cPasswd = findViewById(R.id.confirmPasswordInput);
+
+    Log.d("MDLog", username.toString());
+    Log.d("MDLog", email.toString());
+    Log.d("MDLog", passwd.toString());
+    Log.d("MDLog", cPasswd.toString());
   }
 }
